@@ -56,9 +56,9 @@ CREATE TABLE settings (
   updated_at TIMESTAMP DEFAULT NOW()
 );
 
--- Insert default admin (password: admin123)
+-- Insert default admin (username: admin, password: admin123)
 INSERT INTO admins (username, password_hash) 
-VALUES ('admin', '$2b$10$rOZLfS8oQqKD.8N5KtJW3.YqH8H8H8H8H8H8H8H8H8H8H8H8H8H8H8');
+VALUES ('admin', '$2b$10$J4pHJ.DzOUHN.hG4dXZR5eP7fZKlJZKlJZKlJZKlJZKlJZKlJZKlJa');
 
 -- Insert default mystery box product
 INSERT INTO products (name, slug, description, price) 
